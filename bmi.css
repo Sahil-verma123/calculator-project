@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contain{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    border:none;
+height: 29rem;
+width: 28rem;
+border-radius: 1rem;
+background-color: rgb(77, 77, 77);
+    color: rgb(216, 255, 176);
+}
+.contain h2{
+    font-size: 2rem;
+    color: green;
+    padding: 1rem;
+    color: orange;
+}
+.contain p{
+    font-size: 1.4rem;
+    padding: .6rem 1rem;
+    text-transform: capitalize;
+}
+.contain input{
+    font-size: 1.2rem ;
+    text-align: center;
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: orange;
+    border: none;
+
+}
+.contain #result{
+    padding: .5rem;
+}
+.contain button{
+    font-size: 1.3rem;
+    padding: .3rem .4rem;
+    border-radius: .5rem;
+    background-color: orange;
+    width: 7em;
+}

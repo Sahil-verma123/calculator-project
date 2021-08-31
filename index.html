@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI-CALCULATOR</title>
+   <link rel="stylesheet" href="bmi.css">
+   <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div class="contain">
+        <div class="content">
+        <h2>
+            BMI calculator
+        </h2>
+        <p class="text">Height</p>
+        <input type="text" id="h" placeholder="height in cm">
+
+        <p class="text">Weight</p>
+        <input type="text" id="w" placeholder="weight in kg">
+        
+
+        <p id="result"></p>
+        <button id="btn" onclick="BMI()">Calculate</button>
+        
+
+        <p id="information">please put height in [cm] and Weight in [kg]</p>
+    </div>
+   
+    </div>
+
+
+    <!-- ----------------------------------this is my normal calculator code --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+    <div class="container">
+
+        <h1>Calculator</h1>
+        <div class="calculator">
+
+        <input type="text" name="screen" id="screen">
+        <table>
+            <table>
+                <tr>
+                    <td><button>(</button></td>
+                    <td><button>)</button></td>
+                    <td><button>C</button></td>
+                    <td><button>%</button></td>
+                </tr>
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>X</button></td>
+                </tr>
+                 <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button>-</button></td>
+                </tr>
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button>+</button></td>
+                </tr>
+                <tr>
+                    <td><button>0</button></td>
+                    <td><button>.</button></td>
+                    <td><button>/</button></td>
+                    <td><button>=</button></td>
+                </tr>
+            </table>
+        </table>
+    </div>
+    </div>
+    
+
+    <script src="calculator.js"></script>
+
+    <!-- ----------------------------------------this is bmi javascript code ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+<script type="text/javascript">
+    function BMI() {
+        var h = document.getElementById('h').value;
+        var w = document.getElementById('w').value;
+        
+        var bmi = w/(h/100*h/100);
+        var bmio = (bmi.toFixed(2));
+
+        document.getElementById('result').innerHTML= "your BMI  is "+ bmio;
+
+       
+    }
+</script>
+<!-- <script src="../bootstrap-project/js/bootstrap.js"></script> -->
+</body>
+</html>
